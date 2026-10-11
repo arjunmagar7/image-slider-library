@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore beautiful places through the Fieldnotes travel image slider.">
+  <title>Fieldnotes | Travel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="slider.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top">fieldnotes<span>.</span></a>
+    <span class="header-note">A small collection of places</span>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">TRAVEL / LANDSCAPE / CULTURE</p>
+      <h1>The world, one frame at a time.</h1>
+      <p class="intro-copy">
+        Take a short visual trip through mountain paths, old streets,
+        quiet shores and places shaped by people and nature.
+      </p>
+    </section>
+
+    <section class="gallery-section" aria-label="Travel image gallery">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow">THE GALLERY</p>
+          <h2>Places worth pausing for</h2>
+        </div>
+        <p class="gallery-note">Use the arrows or choose a marker.</p>
+      </div>
+
+      <div class="slider" id="image-slider"
+           aria-label="Travel photographs"
+           aria-roledescription="carousel" tabindex="0">
+
+        <div class="slider-viewport">
+          <div class="slider-track" id="slider-track">
+
+            <article class="slide">
+              <img src="images/01-himalayan-lake.jpg"
+                   alt="Blue lake beneath Himalayan peaks">
+              <div class="slide-caption">
+                <span>01 / 10</span>
+                <h3>Stillness in the Himalayas</h3>
+                <p>Cold water, open sky, and a long view.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/02-old-town.jpg"
+                   alt="Warm stone buildings along an old street">
+              <div class="slide-caption">
+                <span>02 / 10</span>
+                <h3>Streets with stories</h3>
+                <p>Every doorway seems to remember something.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/03-japanese-garden.jpg"
+                   alt="Traditional pagoda among flowering trees">
+              <div class="slide-caption">
+                <span>03 / 10</span>
+                <h3>A quiet garden</h3>
+                <p>Soft blossoms around a familiar roofline.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/04-desert-arch.jpg"
+                   alt="Sandstone arch in a sunny desert">
+              <div class="slide-caption">
+                <span>04 / 10</span>
+                <h3>Carved by time</h3>
+                <p>Wind and weather leave their own design.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/05-coastal-lighthouse.jpg"
+                   alt="White lighthouse above a green coastal cliff">
+              <div class="slide-caption">
+                <span>05 / 10</span>
+                <h3>Where land meets sea</h3>
+                <p>A steady light above restless water.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/06-rice-terraces.jpg"
+                   alt="Green rice terraces across a hillside">
+              <div class="slide-caption">
+                <span>06 / 10</span>
+                <h3>Lines on the hillside</h3>
+                <p>Careful work follows the shape of the land.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/07-alpine-village.jpg"
+                   alt="Village below snow-covered alpine mountains">
+              <div class="slide-caption">
+                <span>07 / 10</span>
+                <h3>Winter village</h3>
+                <p>Warm windows beneath a pale mountain.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/08-temple-courtyard.jpg"
+                   alt="Temple courtyard with stone columns and greenery">
+              <div class="slide-caption">
+                <span>08 / 10</span>
+                <h3>Courtyard of memory</h3>
+                <p>Stone, shade, and details made by hand.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/09-waterfall.jpg"
+                   alt="Waterfall falling into a pool in a forest">
+              <div class="slide-caption">
+                <span>09 / 10</span>
+                <h3>The sound of water</h3>
+                <p>A cool pause inside a green valley.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="images/10-mediterranean-harbor.jpg"
+                   alt="Colorful houses beside a Mediterranean harbor">
+              <div class="slide-caption">
+                <span>10 / 10</span>
+                <h3>Harbor at golden hour</h3>
+                <p>Boats drift while rooftops catch the sun.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="arrow prev" id="previous-button"
+                type="button" aria-label="Previous image">
+          <span>&#10094;</span>
+          <span>Previous</span>
+        </button>
+
+        <button class="arrow next" id="next-button"
+                type="button" aria-label="Next image">
+          <span>Next</span>
+          <span>&#10095;</span>
+        </button>
+
+        <div class="slide-count" aria-live="polite" aria-atomic="true">
+          <span id="current-number">01</span>
+          <span>/</span>
+          <span id="total-number">10</span>
+        </div>
+      </div>
+
+      <div class="slider-bottom">
+        <div class="slider-dots" id="slider-dots"
+             role="group" aria-label="Choose an image"></div>
+        <p class="keyboard-hint">A little gallery for curious eyes.</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-mark" aria-hidden="true">✳</div>
+      <div class="about-heading">
+        <p class="eyebrow">ABOUT THIS PROJECT</p>
+        <h2>A small library, built from the basics.</h2>
+      </div>
+      <p class="about-copy">
+        Fieldnotes is a responsive image slider made with HTML, CSS
+        and JavaScript. It uses a horizontal track, clickable dots,
+        and cloned boundary slides to create a continuous gallery
+        without a third-party carousel library.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p class="footer-title">fieldnotes<span>.</span></p>
+      <p class="footer-credit">
+        Created by <strong>Arjun Reshmi Magar</strong>
+        · BIT Web Design and Development
+      </p>
+    </div>
+
+    <div class="footer-actions">
+      <a class="github-link"
+         href="https://github.com/arjunmagar7"
+         target="_blank" rel="noopener noreferrer">
+        GitHub &#8599;
+      </a>
+
+      <button class="copyright-button" id="copyright-button"
+              type="button" aria-expanded="false"
+              aria-controls="copyright-notice">
+        Copyright notice
+      </button>
+    </div>
+
+    <p class="copyright-notice" id="copyright-notice" hidden>
+      &copy; <span id="copyright-year"></span>
+      Arjun Reshmi Magar. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
